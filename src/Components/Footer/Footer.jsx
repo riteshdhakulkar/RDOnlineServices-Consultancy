@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Link } from "react-router-dom";
 
@@ -67,11 +66,10 @@ const Footer = () => {
             <li>
               📧{" "}
               <a
-                href="rohitdhakulkar29@gmail.com"
+                href="mailto:rdonlineservicesconsultancy@gmail.com"
                 className="hover:text-blue-400 transition-colors duration-200"
               >
-                
-rdonlineservicesconsultancy@gmail.com
+                rdonlineservicesconsultancy@gmail.com
               </a>
             </li>
             <li>📞 +91-9823058351</li>
@@ -79,9 +77,10 @@ rdonlineservicesconsultancy@gmail.com
         </div>
       </div>
 
-      {/* Bottom Bar */}
-      <div className="mt-10 border-t border-gray-700 pt-6 text-center text-sm text-gray-400">
-        © {new Date().getFullYear()} RD Online Services & Consultancy. All rights reserved.
+      {/* Bottom Bar with creator name */}
+      <div className="mt-10 border-t border-gray-700 pt-6 flex justify-between items-center text-sm text-gray-400 max-w-screen-xl mx-auto px-6">
+        <span>© {new Date().getFullYear()} RD Online Services & Consultancy. All rights reserved.</span>
+        <span>Created by Ritesh Dhakulkar</span>
       </div>
     </footer>
   );
