@@ -85,14 +85,7 @@ const Header = () => {
                 Contact
               </Link>
             </li>
-            <li>
-  <Link
-    to="/review"
-    className="block py-2 px-3 text-gray-300 hover:text-blue-400 transition-colors duration-200"
-  >
-    Review
-  </Link>
-</li>
+           
 
           </ul>
         </div>
