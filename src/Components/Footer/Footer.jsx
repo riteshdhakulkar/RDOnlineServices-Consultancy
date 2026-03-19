@@ -1,20 +1,33 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { FaFacebook } from "react-icons/fa";
 
 const Footer = () => {
   return (
     <footer className="bg-gray-900 text-gray-300 py-10 mt-12">
       <div className="max-w-screen-xl mx-auto px-6 grid md:grid-cols-3 gap-8">
-        
+
         {/* Column 1 - Brand Info */}
         <div>
           <h2 className="text-xl font-semibold text-white mb-3">
             RD Online Services & Consultancy
           </h2>
           <p className="text-gray-400 text-sm">
-            Your trusted platform for applying government documents such as Caste, Domicile,
-            Income Certificates, and more — quick, simple, and reliable.
+            Your trusted platform for applying government documents such as Caste,
+            Domicile, Income Certificates, and more — quick, simple, and reliable.
           </p>
+
+          {/* Social Icons */}
+          <div className="flex gap-4 mt-4">
+            <a
+              href="https://www.facebook.com/profile.php?id=6158390061394"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-500 hover:text-blue-400 transition"
+            >
+              <FaFacebook size={22} />
+            </a>
+          </div>
         </div>
 
         {/* Column 2 - Quick Links */}
@@ -22,34 +35,22 @@ const Footer = () => {
           <h3 className="text-lg font-semibold text-white mb-3">Quick Links</h3>
           <ul className="space-y-2 text-sm">
             <li>
-              <Link
-                to="/about"
-                className="hover:text-blue-400 transition-colors duration-200"
-              >
+              <Link to="/about" className="hover:text-blue-400 transition">
                 About Us
               </Link>
             </li>
             <li>
-              <Link
-                to="/privacy-policy"
-                className="hover:text-blue-400 transition-colors duration-200"
-              >
+              <Link to="/privacy-policy" className="hover:text-blue-400 transition">
                 Privacy Policy
               </Link>
             </li>
             <li>
-              <Link
-                to="/terms"
-                className="hover:text-blue-400 transition-colors duration-200"
-              >
+              <Link to="/terms" className="hover:text-blue-400 transition">
                 Terms & Conditions
               </Link>
             </li>
             <li>
-              <Link
-                to="/contact"
-                className="hover:text-blue-400 transition-colors duration-200"
-              >
+              <Link to="/contact" className="hover:text-blue-400 transition">
                 Contact Us
               </Link>
             </li>
@@ -60,14 +61,12 @@ const Footer = () => {
         <div>
           <h3 className="text-lg font-semibold text-white mb-3">Contact Info</h3>
           <ul className="space-y-2 text-sm">
-            <li>
-              📍 <span className="text-gray-400">Nagpur, Maharashtra, India</span>
-            </li>
+            <li>📍 <span className="text-gray-400">Nagpur, Maharashtra, India</span></li>
             <li>
               📧{" "}
               <a
                 href="mailto:rdonlineservicesconsultancy@gmail.com"
-                className="hover:text-blue-400 transition-colors duration-200"
+                className="hover:text-blue-400 transition"
               >
                 rdonlineservicesconsultancy@gmail.com
               </a>
@@ -77,9 +76,11 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Bottom Bar with creator name */}
+      {/* Bottom Bar */}
       <div className="mt-10 border-t border-gray-700 pt-6 flex justify-between items-center text-sm text-gray-400 max-w-screen-xl mx-auto px-6">
-        <span>© {new Date().getFullYear()} RD Online Services & Consultancy. All rights reserved.</span>
+        <span>
+          © {new Date().getFullYear()} RD Online Services & Consultancy. All rights reserved.
+        </span>
         <span>Created by Ritesh Dhakulkar</span>
       </div>
     </footer>
