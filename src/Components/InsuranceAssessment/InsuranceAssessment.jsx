@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useRef } from "react";
-import { Link } from "react-router-dom";
 import {
   FiShield,
   FiUser,
@@ -9,21 +8,15 @@ import {
   FiCheckCircle,
   FiPrinter,
   FiEdit3,
-  FiArrowRight,
-  FiMapPin,
-  FiPhone,
-  FiDollarSign,
   FiActivity,
   FiCheck,
   FiAward,
   FiPercent,
-  FiHelpCircle,
   FiLock,
   FiUploadCloud,
   FiTrash2,
   FiSliders,
   FiCopy,
-  FiEye,
   FiFile,
   FiCalendar,
 } from "react-icons/fi";
