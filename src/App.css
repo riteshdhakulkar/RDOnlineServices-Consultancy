@@ -36,3 +36,57 @@
     transform: rotate(360deg);
   }
 }
+
+/* Print Styles for A4 Health Insurance Needs Report */
+@media print {
+  body {
+    background-color: #ffffff !important;
+    color: #0f172a !important;
+    font-size: 11pt !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  header,
+  footer,
+  nav,
+  .no-print,
+  .assessment-form-wrapper {
+    display: none !important;
+  }
+
+  .print-only {
+    display: block !important;
+  }
+
+  #needs-report-section {
+    display: block !important;
+    position: static !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none !important;
+    box-shadow: none !important;
+    page-break-inside: auto;
+  }
+
+  .report-page-break {
+    page-break-before: always;
+  }
+
+  .report-table {
+    border-collapse: collapse !important;
+    width: 100% !important;
+  }
+
+  .report-table th,
+  .report-table td {
+    border: 1px solid #cbd5e1 !important;
+    padding: 6px 8px !important;
+  }
+
+  @page {
+    size: A4 portrait;
+    margin: 10mm 12mm;
+  }
+}

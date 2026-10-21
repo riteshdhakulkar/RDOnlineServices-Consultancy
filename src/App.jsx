@@ -27,11 +27,14 @@ import Rtoservices from "./Components/Rtoservices";
 import PrivacyPolicy from "./Components/PrivacyPolicy";
 import Terms from "./Components/Terms";
 import Aadhar from "./Components/Aadhar";
+import InsuranceAssessment from "./Components/InsuranceAssessment/InsuranceAssessment";
+import ScrollToTop from "./Components/ScrollToTop";
 
 
 function App() {
   return (
     <>
+      <ScrollToTop />
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -42,9 +45,8 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy/>}/>
         <Route path="/terms" element={<Terms/>}/>
-        <Route path="/" element={<Card/>}/>
+        <Route path="/card" element={<Card/>}/>
         <Route path="/govdocument" element={<Govdocument/>}/>
-         <Route path="/" element={<Govdocument />} />
         <Route path="/castcertificate" element={<Castcertificate />} />
         <Route path="/nclcertificate" element={<Nclcertificate/>}/>
        <Route path="/income" element={<Income/>}/>
@@ -58,6 +60,7 @@ function App() {
        <Route path="/security" element={<Security/>}/>
        <Route path="/loans" element={<Loans/>}/>
       <Route path="/rtoservices" element={<Rtoservices/>}/>
+      <Route path="/insurance-assessment" element={<InsuranceAssessment/>}/>
       
       </Routes>
       <Card/>

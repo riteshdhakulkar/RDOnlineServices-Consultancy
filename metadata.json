@@ -1,0 +1,8 @@
+{
+  "name": "RDOnlineServices-Consultancy",
+  "description": "Consultancy services for college and government documents, certificates, loans, insurance, and RTO services.",
+  "permissions": [],
+  "capabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
